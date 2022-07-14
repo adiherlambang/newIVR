@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<action_element id="Element@1529542091:1657079340362" name="Init_Value" version="6.0.1">
+<config>
+<settings>
+<setting name="mediaIP">var cvp = {Data.Session.cvp};
+var cvp_ip;
+
+if(cvp==="a")
+{
+	cvp_ip = "10.254.173.5";
+}else if(cvp==="b")
+{
+	cvp_ip = "10.204.173.5";
+}else if(cvp==="c")
+{
+	cvp_ip = "10.243.227.205";
+}else if(cvp==="d")
+{
+	cvp_ip = "198.18.133.13";
+}
+
+cvp_ip
+</setting>
+</settings>
+</config>
+</action_element>

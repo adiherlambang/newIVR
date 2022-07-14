@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<page id="Page@1830090456:1657774953597" name="IVRSelfService_Page" version="6.0.1">
+<element height="50" id="Element@927735466:1657774953597" name="IVRSelfService_Entry" type="Page Entry" width="183" x="187" y="79">
+<exit_states>
+<exit_state name="next" target="Element@1983541759:1657774999914"/>
+</exit_states>
+</element>
+<element height="50" id="Element@1983541759:1657774999914" name="Decision_SelfService" type="Decision" width="185" x="188" y="264">
+<exit_states>
+<exit_state name="Banking" target="Element@812932220:1657775126431"/>
+<exit_state name="Credit" target="Element@2042953967:1657775142567"/>
+<exit_state name="Corp" target="Element@493121100:1657775155373"/>
+</exit_states>
+</element>
+<element height="50" id="Element@812932220:1657775126431" name="SelfService_Banking" src="com.audium.server.voiceElement.internal.CiscoSubdialogReturnElement" type="Subdialog Return" width="181" x="552" y="103">
+<exit_states>
+<exit_state name="done"/>
+</exit_states>
+</element>
+<element height="50" id="Element@2042953967:1657775142567" name="SelfService_Credit" src="com.audium.server.voiceElement.internal.CiscoSubdialogReturnElement" type="Subdialog Return" width="168" x="561" y="245">
+<exit_states>
+<exit_state name="done"/>
+</exit_states>
+</element>
+<element height="50" id="Element@493121100:1657775155373" name="SelfService_Corp" src="com.audium.server.voiceElement.internal.CiscoSubdialogReturnElement" type="Subdialog Return" width="160" x="553" y="395">
+<exit_states>
+<exit_state name="done"/>
+</exit_states>
+</element>
+</page>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<page id="Page@840621751:1657622131089" name="DBCheck_Page" version="6.0.1">
+<element height="50" id="Element@545202416:1657622131089" name="DBCheck_Page" type="Page Entry" width="147" x="435" y="49">
+<exit_states>
+<exit_state name="next" target="Element@1231933807:1657769888937"/>
+</exit_states>
+</element>
+<element height="50" id="Element@1231933807:1657769888937" name="DB_BINCard" src="com.audium.server.action.database.DatabaseAction" type="Action Element" width="135" x="443" y="161">
+<exit_states>
+<exit_state name="done" target="Element@484895096:1657771957265"/>
+<exit_state name="Java Exception-Error_DB" target="Element@1118854669:1657798758929"/>
+</exit_states>
+</element>
+<element height="50" id="Element@484895096:1657771957265" name="Decision_BinCard" type="Decision" width="165" x="423" y="287">
+<exit_states>
+<exit_state name="NotRegistered" target="Element@173102693:1657774868333"/>
+<exit_state name="Registered" target="Element@990074141:1657772041630"/>
+</exit_states>
+</element>
+<element height="50" id="Element@990074141:1657772041630" name="Decision_CheckStatus" type="Decision" width="192" x="403" y="428">
+<exit_states>
+<exit_state name="IVRSelfService" target="Element@534524290:1657774985490"/>
+<exit_state name="NotActive" target="Element@173102693:1657774868333"/>
+</exit_states>
+</element>
+<element height="50" id="Element@173102693:1657774868333" name="16CardError" type="Page Connector" width="129" x="103" y="347">
+<page_connector target="Element@1855308037:1657774482589">16CardError<config/>
+</page_connector>
+</element>
+<element height="50" id="Element@534524290:1657774985490" name="IVRSelfService_Entry" type="Page Connector" width="183" x="768" y="426">
+<page_connector target="Element@927735466:1657774953597">IVRSelfService_Entry<config/>
+</page_connector>
+</element>
+<element height="50" id="Element@1118854669:1657798758929" name="Main_Menu_Page" type="Page Connector" width="164" x="832" y="162">
+<page_connector target="Element@824723572:1657620748010">Main_Menu_Page<config/>
+</page_connector>
+</element>
+</page>

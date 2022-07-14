@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<decision id="Element@1983541759:1657774999914" name="Decision_SelfService" version="6.0.1">
+<config>
+<source type="Decision Editor"><![CDATA[<knowledge_base>
+    <rule name="Decision_SelfService">
+        <exit_state name="Banking" conjugate="and">
+            <string operator="equal">
+                <data>
+                    <element name="DB_BINCard" variable="name" />
+                </data>
+                <constant_string value="debit" />
+            </string>
+        </exit_state>
+        <exit_state name="Credit" conjugate="and">
+            <string operator="equal">
+                <data>
+                    <element name="DB_BINCard" variable="name" />
+                </data>
+                <constant_string value="kredit" />
+            </string>
+        </exit_state>
+        <exit_state name="Corp" conjugate="and">
+            <string operator="equal">
+                <data>
+                    <element name="DB_BINCard" variable="name" />
+                </data>
+                <constant_string value="perusahaan" />
+            </string>
+        </exit_state>
+    </rule>
+</knowledge_base>]]></source>
+</config>
+</decision>

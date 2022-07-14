@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<subdialog_return id="Element@2042953967:1657775142567" name="SelfService_Credit" version="6.0.1">
+<config>
+<settings>
+<setting name="caller_input">SelfServiceCC</setting>
+<setting name="FromExtVXML0">IVR_SS</setting>
+<setting name="FromExtVXML1">{Data.Session.16DigitCard}</setting>
+<setting name="FromExtVXML2">IVR_CC</setting>
+<setting name="FromExtVXML3"/>
+</settings>
+</config>
+</subdialog_return>

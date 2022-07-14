@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<subdialog_return id="Element@1842488432:1657768866243" name="NoInput_Error" version="6.0.1">
+<config>
+<settings>
+<setting name="caller_input">NoInputError</setting>
+<setting name="FromExtVXML0">NoInputError</setting>
+<setting name="FromExtVXML1"/>
+<setting name="FromExtVXML2"/>
+<setting name="FromExtVXML3"/>
+</settings>
+</config>
+</subdialog_return>

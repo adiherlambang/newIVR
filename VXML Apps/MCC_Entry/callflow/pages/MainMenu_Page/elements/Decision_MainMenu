@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<decision id="Element@1824509713:1657622068250" name="Decision_MainMenu" version="6.0.1">
+<config>
+<source type="Decision Editor"><![CDATA[<knowledge_base>
+    <rule name="Decision_MainMenu">
+        <exit_state name="SelfService" conjugate="and">
+            <number operator="equal">
+                <local_variable name="mainMenuDigitLength" />
+                <constant_number value="16" />
+            </number>
+        </exit_state>
+        <exit_state name="Menu" conjugate="and">
+            <number operator="equal">
+                <local_variable name="mainMenuDigitLength" />
+                <constant_number value="1" />
+            </number>
+        </exit_state>
+        <exit_state name="Error16Card" conjugate="and">
+            <number operator="greater">
+                <local_variable name="mainMenuDigitLength" />
+                <constant_number value="1" />
+            </number>
+            <number operator="less">
+                <local_variable name="mainMenuDigitLength" />
+                <constant_number value="16" />
+            </number>
+        </exit_state>
+    </rule>
+</knowledge_base>]]></source>
+</config>
+</decision>

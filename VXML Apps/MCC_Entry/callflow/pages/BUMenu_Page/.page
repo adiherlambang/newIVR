@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<page id="Page@1238331819:1657631007638" name="BUMenu_Page" version="6.0.1">
+<element height="50" id="Element@600883812:1657631007638" name="BUMenu_Page" type="Page Entry" width="144" x="265" y="45">
+<exit_states>
+<exit_state name="next" target="Element@913255578:1657631165759"/>
+</exit_states>
+</element>
+<element height="50" id="Element@913255578:1657631165759" name="Decision_BUMenu" type="Decision" width="169" x="252" y="226">
+<exit_states>
+<exit_state name="Pemblokiran" target="Element@278313293:1657779094806"/>
+<exit_state name="Perbankan" target="Element@1999336914:1657699217216"/>
+<exit_state name="KartuKredit" target="Element@1212503596:1657769248269"/>
+<exit_state name="ErrorFormat" target="Element@44017967:1657769066670"/>
+<exit_state name="CallAgent" target="Element@1956579164:1657776980857"/>
+</exit_states>
+</element>
+<element height="50" id="Element@1999336914:1657699217216" name="Agent_Banking" src="com.audium.server.voiceElement.internal.CiscoSubdialogReturnElement" type="Subdialog Return" width="149" x="673" y="162">
+<exit_states>
+<exit_state name="done"/>
+</exit_states>
+</element>
+<element height="50" id="Element@44017967:1657769066670" name="Format_Error" type="Page Connector" width="135" x="266" y="444">
+<page_connector target="Element@1273775060:1657768917986">Format_Error<config/>
+</page_connector>
+</element>
+<element height="50" id="Element@1212503596:1657769248269" name="KreditMenu_Entry" type="Page Connector" width="166" x="704" y="285">
+<page_connector target="Element@1547639027:1657769217299">KreditMenu_Entry<config/>
+</page_connector>
+</element>
+<element height="50" id="Element@1956579164:1657776980857" name="CallAgent" src="com.audium.server.voiceElement.internal.CiscoSubdialogReturnElement" type="Subdialog Return" width="115" x="540" y="416">
+<exit_states>
+<exit_state name="done"/>
+</exit_states>
+</element>
+<element height="50" id="Element@278313293:1657779094806" name="BlokirMenu_Entry" type="Page Connector" width="164" x="652" y="49">
+<page_connector target="Element@1607842628:1657779031071">BlokirMenu_Entry<config/>
+</page_connector>
+</element>
+</page>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<page id="Page@1733418828:1656911242733" name="InitialMenu_Page" version="6.0.1">
+<element height="50" id="Element@1739525039:1656911242731" name="Start Of Call" start_of_call="true" type="Page Entry" width="130" x="127" y="60">
+<exit_states>
+<exit_state name="next" target="Element@46563182:1656911249869"/>
+</exit_states>
+</element>
+<element height="50" id="Element@46563182:1656911249869" name="Session_Start" src="com.audium.server.voiceElement.internal.CiscoSubdialogStartElement" type="Subdialog Start" width="136" x="127" y="154">
+<exit_states>
+<exit_state name="done" target="Element@1529542091:1657079340362"/>
+</exit_states>
+</element>
+<element height="50" id="Element@1529542091:1657079340362" name="Init_Value" src="com.audium.server.action.setvalue.SetValueAction" type="Action Element" width="133" x="131" y="255">
+<exit_states>
+<exit_state name="done" target="Element@1320297680:1657707210426"/>
+</exit_states>
+</element>
+<element height="50" id="Element@333285252:1657620774926" name="Main_Menu_Page" type="Page Connector" width="164" x="725" y="367">
+<page_connector target="Element@824723572:1657620748010">Main_Menu_Page<config/>
+</page_connector>
+</element>
+<element height="50" id="Element@1256307165:1657707125712" name="Media_Setup_Bahasa" src="com.audium.server.action.context.ApplicationModifier" type="Action Element" width="189" x="418" y="466">
+<exit_states>
+<exit_state name="done" target="Element@333285252:1657620774926"/>
+</exit_states>
+</element>
+<element height="50" id="Element@1875178044:1657707148652" name="Media_Setup_English" src="com.audium.server.action.context.ApplicationModifier" type="Action Element" width="189" x="422" y="289">
+<exit_states>
+<exit_state name="done" target="Element@333285252:1657620774926"/>
+</exit_states>
+</element>
+<element height="50" id="Element@1320297680:1657707210426" name="Decision_MediaSetup" type="Decision" width="193" x="101" y="374">
+<exit_states>
+<exit_state name="Bahasa" target="Element@1256307165:1657707125712"/>
+<exit_state name="English" target="Element@1875178044:1657707148652"/>
+</exit_states>
+</element>
+</page>

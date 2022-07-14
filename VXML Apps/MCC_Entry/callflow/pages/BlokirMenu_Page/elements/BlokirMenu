@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<voice_element id="Element@1787451663:1657779058179" name="BlokirMenu" version="6.0.1">
+<config>
+<settings>
+<setting name="noinput_timeout">5s</setting>
+<setting name="max_noinput_count">3</setting>
+<setting name="max_nomatch_count">3</setting>
+<setting name="confidence_level">0.40</setting>
+<setting name="modal">false</setting>
+<setting name="option1_dtmf">1</setting>
+<setting name="option1_voice"/>
+<setting name="option1_value">BK_Blokir</setting>
+<setting name="option2_dtmf">2</setting>
+<setting name="option2_voice"/>
+<setting name="option2_value">CC_Blokir</setting>
+</settings>
+<audio>
+<audio_group barge_in="true" count="1" name="initial_audio_group">
+<audio_item name="audio item 1" type="static">
+<audio_item_notes/>
+<audio_item_config view_id="default">
+<static default_audio_path="true" uri=""><![CDATA[to call with agent banking blocking card, press 1
+
+to call with agent credit blocking card, press 2]]></static>
+</audio_item_config>
+</audio_item>
+</audio_group>
+<audio_group barge_in="true" count="1" name="nomatch_audio_group">
+<audio_item name="audio item 1" type="static">
+<audio_item_notes/>
+<audio_item_config view_id="default">
+<static default_audio_path="true" uri=""><![CDATA[sorry, you have entered the wrong choice.]]></static>
+</audio_item_config>
+</audio_item>
+<audio_item name="audio item 2" type="static">
+<audio_item_notes/>
+<audio_item_config view_id="default">
+<static default_audio_path="true" uri=""><![CDATA[to call with agent banking blocking card, press 1
+
+to call with agent credit blocking card, press 2]]></static>
+</audio_item_config>
+</audio_item>
+</audio_group>
+<audio_group barge_in="true" count="2" name="nomatch_audio_group">
+<audio_item name="audio item 1" type="static">
+<audio_item_notes/>
+<audio_item_config view_id="default">
+<static default_audio_path="true" uri=""><![CDATA[sorry, you have entered the wrong choice.]]></static>
+</audio_item_config>
+</audio_item>
+<audio_item name="audio item 2" type="static">
+<audio_item_notes/>
+<audio_item_config view_id="default">
+<static default_audio_path="true" uri=""><![CDATA[to call with agent banking blocking card, press 1
+
+to call with agent credit blocking card, press 2]]></static>
+</audio_item_config>
+</audio_item>
+</audio_group>
+<audio_group barge_in="true" count="3" name="nomatch_audio_group">
+<audio_item name="audio item 1" type="static">
+<audio_item_notes/>
+<audio_item_config view_id="default">
+<static default_audio_path="true" uri=""><![CDATA[sorry, you have entered the wrong choice.
+
+you have been made 3 mistake, thank you for calling.]]></static>
+</audio_item_config>
+</audio_item>
+</audio_group>
+<audio_group barge_in="true" count="1" name="noinput_audio_group">
+<audio_item name="audio item 1" type="static">
+<audio_item_notes/>
+<audio_item_config view_id="default">
+<static default_audio_path="true" uri=""><![CDATA[sorry, we did not recieve your response.]]></static>
+</audio_item_config>
+</audio_item>
+<audio_item name="audio item 2" type="static">
+<audio_item_notes/>
+<audio_item_config view_id="default">
+<static default_audio_path="true" uri=""><![CDATA[to call with agent banking blocking card, press 1
+
+to call with agent credit blocking card, press 2]]></static>
+</audio_item_config>
+</audio_item>
+</audio_group>
+<audio_group barge_in="true" count="2" name="noinput_audio_group">
+<audio_item name="audio item 1" type="static">
+<audio_item_notes/>
+<audio_item_config view_id="default">
+<static default_audio_path="true" uri=""><![CDATA[sorry, we did not recieve your response.]]></static>
+</audio_item_config>
+</audio_item>
+<audio_item name="audio item 2" type="static">
+<audio_item_notes/>
+<audio_item_config view_id="default">
+<static default_audio_path="true" uri=""><![CDATA[to call with agent banking blocking card, press 1
+
+to call with agent credit blocking card, press 2]]></static>
+</audio_item_config>
+</audio_item>
+</audio_group>
+<audio_group barge_in="true" count="3" name="noinput_audio_group">
+<audio_item name="audio item 1" type="static">
+<audio_item_notes/>
+<audio_item_config view_id="default">
+<static default_audio_path="true" uri=""><![CDATA[sorry, did not recieve your response.
+
+you have been made 3 mistake, thank you for calling.]]></static>
+</audio_item_config>
+</audio_item>
+</audio_group>
+</audio>
+</config>
+</voice_element>

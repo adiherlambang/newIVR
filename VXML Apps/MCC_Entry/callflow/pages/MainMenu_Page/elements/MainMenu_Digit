@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<voice_element id="Element@1492597966:1657620783055" name="MainMenu_Digit" version="6.0.1">
+<config>
+<settings>
+<setting name="inputmode">dtmf</setting>
+<setting name="noinput_timeout">5s</setting>
+<setting name="max_noinput_count">3</setting>
+<setting name="max_nomatch_count">3</setting>
+<setting name="min_digit">1</setting>
+<setting name="max_digit">16</setting>
+<setting name="modal">false</setting>
+<setting name="secure_logging">false</setting>
+<setting name="dtmf_overlay">false</setting>
+</settings>
+<audio>
+<audio_group barge_in="true" count="1" name="initial_audio_group">
+<audio_item name="audio item 1" type="static">
+<audio_item_notes/>
+<audio_item_config view_id="default">
+<static default_audio_path="true" uri=""><![CDATA[for Blocking Card Services, Press 1,
+
+Please Input your 16 digits card,
+
+to talk with agent Banking, press 2
+
+to talk with agent credit card, press 3
+
+to talk with agent, press 9
+]]></static>
+</audio_item_config>
+</audio_item>
+</audio_group>
+<audio_group barge_in="true" count="1" name="nomatch_audio_group">
+<audio_item name="audio item 1" type="static">
+<audio_item_notes/>
+<audio_item_config view_id="default">
+<static default_audio_path="true" uri=""><![CDATA[sorry, you entered the wrong choice]]></static>
+</audio_item_config>
+</audio_item>
+<audio_item name="audio item 2" type="static">
+<audio_item_notes/>
+<audio_item_config view_id="default">
+<static default_audio_path="true" uri=""><![CDATA[for Blocking Card Services, Press 1,
+
+Please Input your 16 digits card,
+
+to talk with agent Banking, press 2
+
+to talk with agent credit card, press 3
+
+to talk with agent, press 9
+]]></static>
+</audio_item_config>
+</audio_item>
+</audio_group>
+<audio_group barge_in="true" count="2" name="nomatch_audio_group">
+<audio_item name="audio item 1" type="static">
+<audio_item_notes/>
+<audio_item_config view_id="default">
+<static default_audio_path="true" uri=""><![CDATA[sorry, you entered the wrong choice]]></static>
+</audio_item_config>
+</audio_item>
+<audio_item name="audio item 2" type="static">
+<audio_item_notes/>
+<audio_item_config view_id="default">
+<static default_audio_path="true" uri=""><![CDATA[for Blocking Card Services, Press 1,
+
+Please Input your 16 digits card,
+
+to talk with agent Banking, press 2
+
+to talk with agent credit card, press 3
+
+to talk with agent, press 9
+]]></static>
+</audio_item_config>
+</audio_item>
+</audio_group>
+<audio_group barge_in="true" count="3" name="nomatch_audio_group">
+<audio_item name="audio item 1" type="static">
+<audio_item_notes/>
+<audio_item_config view_id="default">
+<static default_audio_path="true" uri=""><![CDATA[sorry, you have make 3 mistake]]></static>
+</audio_item_config>
+</audio_item>
+</audio_group>
+<audio_group barge_in="true" count="1" name="noinput_audio_group">
+<audio_item name="audio item 1" type="static">
+<audio_item_notes/>
+<audio_item_config view_id="default">
+<static default_audio_path="true" uri=""><![CDATA[sorry, we did not recieve your response]]></static>
+</audio_item_config>
+</audio_item>
+<audio_item name="audio item 2" type="static">
+<audio_item_notes/>
+<audio_item_config view_id="default">
+<static default_audio_path="true" uri=""><![CDATA[for Blocking Card Services, Press 1,
+
+Please Input your 16 digits card,
+
+to talk with agent Banking, press 2
+
+to talk with agent credit card, press 3
+
+to talk with agent, press 9
+]]></static>
+</audio_item_config>
+</audio_item>
+</audio_group>
+<audio_group barge_in="true" count="2" name="noinput_audio_group">
+<audio_item name="audio item 1" type="static">
+<audio_item_notes/>
+<audio_item_config view_id="default">
+<static default_audio_path="true" uri=""><![CDATA[sorry, we did not recieve your response]]></static>
+</audio_item_config>
+</audio_item>
+<audio_item name="audio item 2" type="static">
+<audio_item_notes/>
+<audio_item_config view_id="default">
+<static default_audio_path="true" uri=""><![CDATA[for Blocking Card Services, Press 1,
+
+Please Input your 16 digits card,
+
+to talk with agent Banking, press 2
+
+to talk with agent credit card, press 3
+
+to talk with agent, press 9
+]]></static>
+</audio_item_config>
+</audio_item>
+</audio_group>
+<audio_group barge_in="true" count="3" name="noinput_audio_group">
+<audio_item name="audio item 1" type="static">
+<audio_item_notes/>
+<audio_item_config view_id="default">
+<static default_audio_path="true" uri=""><![CDATA[sorry, you have make 3 mistake]]></static>
+</audio_item_config>
+</audio_item>
+</audio_group>
+</audio>
+<session_data>
+<data create_when="After" name="16DigitCard">{Data.Element.MainMenu_Digit.value}</data>
+</session_data>
+</config>
+</voice_element>

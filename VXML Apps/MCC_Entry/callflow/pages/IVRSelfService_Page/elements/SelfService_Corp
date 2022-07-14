@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<subdialog_return id="Element@493121100:1657775155373" name="SelfService_Corp" version="6.0.1">
+<config>
+<settings>
+<setting name="caller_input">SelfServiceCorp</setting>
+<setting name="FromExtVXML0">IVR_SS</setting>
+<setting name="FromExtVXML1">{Data.Session.16DigitCard}</setting>
+<setting name="FromExtVXML2">IVR_Corp</setting>
+<setting name="FromExtVXML3"/>
+</settings>
+</config>
+</subdialog_return>

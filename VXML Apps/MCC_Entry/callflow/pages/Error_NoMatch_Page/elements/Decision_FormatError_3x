@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<decision id="Element@1313209803:1657768963166" name="Decision_FormatError_3x" version="6.0.1">
+<config>
+<source type="Decision Editor"><![CDATA[<knowledge_base>
+    <rule name="Decision_FormatError_3x" default_exit_state="EndCall">
+        <exit_state name="Repeat" conjugate="and">
+            <number operator="less_equal">
+                <data>
+                    <element name="Counter_FormatError" variable="count" />
+                </data>
+                <constant_number value="3" />
+            </number>
+        </exit_state>
+    </rule>
+</knowledge_base>]]></source>
+</config>
+</decision>

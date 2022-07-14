@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<subdialog_return id="Element@1954278564:1657769264461" name="Agent_CC_Personal" version="6.0.1">
+<config>
+<settings>
+<setting name="caller_input">Kredit</setting>
+<setting name="FromExtVXML0">IVR_VF</setting>
+<setting name="FromExtVXML1">{Data.Session.16DigitCard}</setting>
+<setting name="FromExtVXML2">{Data.Element.KreditMenu.value}</setting>
+<setting name="FromExtVXML3"/>
+</settings>
+</config>
+</subdialog_return>

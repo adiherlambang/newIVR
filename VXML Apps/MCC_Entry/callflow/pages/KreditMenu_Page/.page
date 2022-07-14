@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<page id="Page@1802594434:1657769217299" name="KreditMenu_Page" version="6.0.1">
+<element height="50" id="Element@1547639027:1657769217299" name="KreditMenu_Entry" type="Page Entry" width="166" x="314" y="78">
+<exit_states>
+<exit_state name="next" target="Element@396286129:1657769339606"/>
+</exit_states>
+</element>
+<element height="50" id="Element@1954278564:1657769264461" name="Agent_CC_Personal" src="com.audium.server.voiceElement.internal.CiscoSubdialogReturnElement" type="Subdialog Return" width="175" x="644" y="196">
+<exit_states>
+<exit_state name="done"/>
+</exit_states>
+</element>
+<element height="50" id="Element@396286129:1657769339606" name="KreditMenu" src="com.audium.server.voiceElement.menu.MFoundation2OptionMenu" type="Voice Element" width="175" x="310" y="289">
+<exit_states>
+<exit_state name="option1" target="Element@1954278564:1657769264461"/>
+<exit_state name="option2" target="Element@596451324:1657769354721"/>
+<exit_state name="max_nomatch" target="Element@869307719:1657769394090"/>
+<exit_state name="max_noinput" target="Element@318579276:1657769392913"/>
+</exit_states>
+</element>
+<element height="50" id="Element@596451324:1657769354721" name="Agent_CC_Corp" src="com.audium.server.voiceElement.internal.CiscoSubdialogReturnElement" type="Subdialog Return" width="152" x="652" y="376">
+<exit_states>
+<exit_state name="done"/>
+</exit_states>
+</element>
+<element height="50" id="Element@318579276:1657769392913" name="NoInput_Page" type="Page Connector" width="142" x="103" y="388">
+<page_connector target="Element@1498025394:1657699492431">NoInput_Page<config/>
+</page_connector>
+</element>
+<element height="50" id="Element@869307719:1657769394090" name="NoMatch_Page" type="Page Connector" width="149" x="96" y="209">
+<page_connector target="Element@52755720:1657699477456">NoMatch_Page<config/>
+</page_connector>
+</element>
+</page>

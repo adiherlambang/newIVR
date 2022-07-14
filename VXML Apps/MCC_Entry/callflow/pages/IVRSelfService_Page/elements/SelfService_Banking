@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<subdialog_return id="Element@812932220:1657775126431" name="SelfService_Banking" version="6.0.1">
+<config>
+<settings>
+<setting name="caller_input">SelfServiceBK</setting>
+<setting name="FromExtVXML0">IVR_SS</setting>
+<setting name="FromExtVXML1">{Data.Session.16DigitCard}</setting>
+<setting name="FromExtVXML2">IVR_BK</setting>
+<setting name="FromExtVXML3"/>
+</settings>
+</config>
+</subdialog_return>

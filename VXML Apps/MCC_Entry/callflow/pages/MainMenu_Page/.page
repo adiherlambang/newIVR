@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<page id="Page@1195094345:1657620748010" name="MainMenu_Page" version="6.0.1">
+<element height="50" id="Element@824723572:1657620748010" name="Main_Menu_Page" type="Page Entry" width="164" x="320" y="-60">
+<exit_states>
+<exit_state name="next" target="Element@1492597966:1657620783055"/>
+</exit_states>
+</element>
+<element height="50" id="Element@1492597966:1657620783055" name="MainMenu_Digit" src="com.audium.server.voiceElement.digit.MBasicDigit" type="Voice Element" width="159" x="323" y="82">
+<exit_states>
+<exit_state name="done" target="Element@1658382734:1657622356049"/>
+<exit_state name="max_nomatch" target="Element@263350703:1657699783777"/>
+<exit_state name="max_noinput" target="Element@1134610555:1657699778844"/>
+</exit_states>
+</element>
+<element height="50" id="Element@1824509713:1657622068250" name="Decision_MainMenu" type="Decision" width="183" x="545" y="262">
+<exit_states>
+<exit_state name="Menu" target="Element@1499370872:1657631121872"/>
+<exit_state name="SelfService" target="Element@116677384:1657622167322"/>
+<exit_state name="Error16Card" target="Element@1882843254:1657769135868"/>
+</exit_states>
+</element>
+<element height="50" id="Element@116677384:1657622167322" name="DBCheck_Page" type="Page Connector" width="147" x="481" y="448">
+<page_connector target="Element@545202416:1657622131089">DBCheck_Page<config/>
+</page_connector>
+</element>
+<element height="50" id="Element@1658382734:1657622356049" name="MainMenu_Value" src="com.audium.server.action.setvalue.SetValueAction" type="Action Element" width="162" x="552" y="82">
+<exit_states>
+<exit_state name="done" target="Element@1824509713:1657622068250"/>
+</exit_states>
+</element>
+<element height="50" id="Element@1499370872:1657631121872" name="BUMenu_Page" type="Page Connector" width="144" x="752" y="406">
+<page_connector target="Element@600883812:1657631007638">BUMenu_Page<config/>
+</page_connector>
+</element>
+<element height="50" id="Element@1134610555:1657699778844" name="NoInput_Page" type="Page Connector" width="142" x="48" y="34">
+<page_connector target="Element@1498025394:1657699492431">NoInput_Page<config/>
+</page_connector>
+</element>
+<element height="50" id="Element@263350703:1657699783777" name="NoMatch_Page" type="Page Connector" width="149" x="47" y="164">
+<page_connector target="Element@52755720:1657699477456">NoMatch_Page<config/>
+</page_connector>
+</element>
+<element height="50" id="Element@1882843254:1657769135868" name="16CardError" type="Page Connector" width="135" x="252" y="261">
+<page_connector target="Element@1855308037:1657774482589">16CardError<config/>
+</page_connector>
+</element>
+</page>

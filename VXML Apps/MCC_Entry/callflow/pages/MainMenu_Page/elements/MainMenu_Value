@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<action_element id="Element@1658382734:1657622356049" name="MainMenu_Value" version="6.0.1">
+<config>
+<log>
+<data create_when="After" name="DigitLength">{LocalVar.mainMenuDigitLength}</data>
+<data create_when="After" name="PrefixDigit">{LocalVar.prefixCard}</data>
+</log>
+<settings>
+<setting name="mainMenuDigitLength">var digit_mainMenu = {Data.Element.MainMenu_Digit.value};
+
+digit_mainMenu.length</setting>
+<setting name="prefixCard">var digit_mainMenu = {Data.Element.MainMenu_Digit.value};
+var prefix;
+if(digit_mainMenu.substring(0,6)=="603298"){
+	prefix = digit_mainMenu.substring(0,8);
+}else{
+	prefix = digit_mainMenu.substring(0,6);
+}
+
+prefix</setting>
+</settings>
+</config>
+</action_element>

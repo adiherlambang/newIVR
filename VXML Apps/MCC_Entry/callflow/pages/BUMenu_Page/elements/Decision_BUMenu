@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<decision id="Element@913255578:1657631165759" name="Decision_BUMenu" version="6.0.1">
+<config>
+<source type="Decision Editor"><![CDATA[<knowledge_base>
+    <rule name="Decision_BUMenu" default_exit_state="ErrorFormat">
+        <exit_state name="Pemblokiran" conjugate="and">
+            <string operator="equal">
+                <data>
+                    <element name="MainMenu_Digit" variable="value" />
+                </data>
+                <constant_string value="1" />
+            </string>
+        </exit_state>
+        <exit_state name="Perbankan" conjugate="and">
+            <string operator="equal">
+                <data>
+                    <element name="MainMenu_Digit" variable="value" />
+                </data>
+                <constant_string value="2" />
+            </string>
+        </exit_state>
+        <exit_state name="KartuKredit" conjugate="and">
+            <string operator="equal">
+                <data>
+                    <element name="MainMenu_Digit" variable="value" />
+                </data>
+                <constant_string value="3" />
+            </string>
+        </exit_state>
+        <exit_state name="CallAgent" conjugate="and">
+            <string operator="equal">
+                <data>
+                    <element name="MainMenu_Digit" variable="value" />
+                </data>
+                <constant_string value="9" />
+            </string>
+        </exit_state>
+    </rule>
+</knowledge_base>]]></source>
+</config>
+</decision>

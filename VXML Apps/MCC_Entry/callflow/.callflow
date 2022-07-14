@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<callflow id="Callflow@41554838:1656911242734" version="6.0.1">
+<page closed="false" id="Page@1733418828:1656911242733">InitialMenu_Page</page>
+<page closed="false" id="Page@1195094345:1657620748010">MainMenu_Page</page>
+<page closed="false" id="Page@840621751:1657622131089">DBCheck_Page</page>
+<page closed="false" id="Page@1238331819:1657631007638">BUMenu_Page</page>
+<page closed="false" id="Page@1830090456:1657774953597">IVRSelfService_Page</page>
+<page closed="false" id="Page@1802594434:1657769217299">KreditMenu_Page</page>
+<page closed="false" id="Page@898846806:1657779031071">BlokirMenu_Page</page>
+<page closed="false" id="Page@1109446221:1657699477456">Error_NoMatch_Page</page>
+<page closed="false" id="Page@746095869:1657699492431">Error_NoInput_Page</page>
+</callflow>
