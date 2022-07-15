@@ -1,0 +1,54 @@
+<!-- The contents of this file will be loaded for each web application -->
+<Context>
+
+    <!-- Default set of monitored resources -->
+    <WatchedResource>WEB-INF/web.xml</WatchedResource>
+	
+    <Manager pathname="" />
+
+	<Resource
+	url="jdbc:sqlserver://198.18.133.11:1433;databaseName=psc;username=sa;password=C1sco12345" 
+	driverClassName="com.microsoft.sqlserver.jdbc.SQLServerDriver"
+	maxActive="100"
+    	maxIdle="30"
+    	maxWait="10000"
+    	removeAbandoned="true"
+    	removeAbandonedTimeout="60"
+    	autoReconnect="true"
+    	logAbandoned="true"	
+	username="sa"
+    	password="C1sco12345" 
+	type="javax.sql.DataSource" 
+	Auth="Container" name="jdbc/cvp_pcs" />
+
+	<Resource
+	url="jdbc:sqlserver://198.18.133.11:1433;databaseName=bin_card;username=sa;password=C1sco12345" 
+	driverClassName="com.microsoft.sqlserver.jdbc.SQLServerDriver"
+	maxActive="100"
+    	maxIdle="30"
+    	maxWait="10000"
+    	removeAbandoned="true"
+    	removeAbandonedTimeout="60"
+    	autoReconnect="true"
+    	logAbandoned="true"	
+	username="sa"
+    	password="C1sco12345" 
+	type="javax.sql.DataSource" 
+	Auth="Container" name="jdbc/cvp_bincard" />
+
+	<Resource
+	url="jdbc:mysql://10.243.227.209:3306/psc?serverTimezone=UTC"
+	driverClassName="com.mysql.jdbc.Driver"
+	maxActive="100"
+    	maxIdle="30"
+    	maxWait="10000"
+    	removeAbandoned="true"
+    	removeAbandonedTimeout="60"
+    	autoReconnect="true"
+    	logAbandoned="true"	
+	username="mccadmin"
+    	password="mdrCC2020!" 
+	type="javax.sql.DataSource" 
+	Auth="Container" name="jdbc/cvp_dbpcs" />
+   
+</Context>
